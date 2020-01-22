@@ -63,4 +63,5 @@ public class Reservation extends BaseEntite {
 	public void setChambres(List<Chambre> chambres) {
 		this.chambres = chambres;
 	}
+
 }
