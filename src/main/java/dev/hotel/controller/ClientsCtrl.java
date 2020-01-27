@@ -27,7 +27,7 @@ public class ClientsCtrl {
 		this.clientRepository = clientRepository;
 	}
 
-	@RequestMapping(method = RequestMethod.GET, path = "lClients")
+	@RequestMapping(method = RequestMethod.GET, path = "clients/lister")
 	public List<Client> retournePlusieursEmployes() {
 		List<Client> listClient = clientRepository.findAll();
 		return listClient;
