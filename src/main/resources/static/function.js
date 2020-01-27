@@ -10,9 +10,9 @@ function recupererClients() {
 
 			.then(
 
-					function(listeClients) {
+					function(listeClient) {
 
-						var clients = listeClients.map(
+						var client = listeClient.map(
 
 						function(client) {
 
@@ -24,7 +24,7 @@ function recupererClients() {
 
 						document.getElementById('client').innerHTML = ' <label for="client">client</label><select class="form-control" name="client" id="client">'
 
-								+ clients + '</select>';
+								+ client + '</select>';
 
 					})
 
@@ -32,7 +32,7 @@ function recupererClients() {
 
 function recupererChambres() {
 
-	fetch('chambres')
+	fetch('chambre')
 
 			.then(function(resp) {
 
@@ -42,9 +42,9 @@ function recupererChambres() {
 
 			.then(
 
-					function(listeChambres) {
+					function(listeChambre) {
 
-						var chambres = listeChambres
+						var chambre = listeChambre
 								.map(
 
 										function(chambre) {
@@ -76,7 +76,7 @@ function recupererChambres() {
 										}).join();
 
 						document.getElementById('cham').innerHTML = '<div class="form-group form-check">'
-								+ chambres + '</div>';
+								+ chambre + '</div>';
 
 					})
 
